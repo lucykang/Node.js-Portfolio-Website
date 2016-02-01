@@ -1,8 +1,89 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-a {
-  color: #00B7FF;
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+		margin-top: 90px;
+	}
+	nav a img{
+    	width: 200px;
+    	height: 50px;
+    	margin-top: -15px;   
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        margin-top:30px;
+    }
+    
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    body {
+        margin-top:30px;
+    }
+}
+@media screen and (min-width:1200px) {
+    body{
+        margin-top:30px;  
+    }
+    .navbar {
+	margin-right: 90px;
+	margin-left: 90px;
+	}
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+/*
+.navbar {
+	/*background: none;
+	margin-top: 20px;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+*/
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
 }
