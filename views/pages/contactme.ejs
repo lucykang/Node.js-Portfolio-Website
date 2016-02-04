@@ -1,3 +1,9 @@
+<!-- File name: contactme.ejs
+     Author's name: Hae Yeon Kang (Lucy)
+     web site name: Hae Yeon's Portfolio Website
+     file description: This is a page with contact form that will send me a mail with details entered by users.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +18,25 @@
         <div class="container">
             <div class="page-header">
                 <h1> Contact Me </h1>
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Full Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Full Name" required="requried">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCompany">Company</label>
+                        <input type="text" class="form-control" id="inputCompany" placeholder="Company Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="8" placeholder="Please write message with preferred contact method and information."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Send</button>
+                </form>
             </div>
         </div>
     </main>

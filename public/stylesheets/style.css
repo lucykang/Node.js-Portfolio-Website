@@ -1,3 +1,5 @@
+/*logo font: Bradley Hand ITC */
+
 html {
   position: relative;
   min-height: 100%;
@@ -8,20 +10,36 @@ body {
     margin-bottom: 60px;
 }
 
+.navbar-transparent .navbar-nav > li > a {
+    color: rosybrown;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover {
+        color: white;
+        /*rgb(255,245,75);*/
+        background-color: rosybrown;
+    }
+    
 @media screen and (max-width: 767px) {
     body {
 		margin-top: 90px;
 	}
-	nav a img{
-    	width: 200px;
-    	height: 50px;
-    	margin-top: -15px;   
-    }
+    
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
     body {
         margin-top:30px;
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        margin-top: 60px;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
     }
     
 }
@@ -29,15 +47,32 @@ body {
     body {
         margin-top:30px;
     }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        margin-top: 60px;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
 @media screen and (min-width:1200px) {
     body{
         margin-top:30px;  
     }
-    .navbar {
-	margin-right: 90px;
-	margin-left: 90px;
-	}
+    
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        margin-top: 60px;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
 
 body > .container {
@@ -63,17 +98,22 @@ body > .container {
 	/*background: none;
 	margin-top: 20px;
 }
-
+*/
 .navbar-brand
 {
     position: absolute;
+    display: block;
     width: 100%;
-    left: 0;
+    /*left: 0;*/
+    top: 0;
     text-align: center;
     margin: auto;
 }
-*/
 
+
+.btn {
+    border-radius: 0px;
+}
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
