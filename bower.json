@@ -1,18 +1,18 @@
 {
   "name": "portfolio-website-p1",
-  "description": "",
+  "description": "Portfolio Website deployed in Azure",
   "main": "",
   "authors": [
     "Lucy <HaeYeon.Kang@MyGeorgian.ca>"
   ],
   "license": "MIT",
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/lucykang/Portfolio-Website",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "Scripts/lib",
+    "public/scripts/lib",
     "test",
     "tests"
   ],

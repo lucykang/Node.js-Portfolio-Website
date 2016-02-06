@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* about me */
-router.get('/aboutme', function(req, res, next){
-    res.render('pages/aboutme', { title: 'ABOUT ME'});
+router.get('/about', function(req, res, next){
+    res.render('pages/about', { title: 'ABOUT ME'});
 });
 
 /* portfolio */
@@ -23,8 +23,8 @@ router.get('/services', function(req, res, next){
 });
 
 /* contact me */
-router.get('/contactme', function(req, res, next){
-    res.render('pages/contactme', { title: 'CONTACT ME'});
+router.get('/contact', function(req, res, next){
+    res.render('pages/contact', { title: 'CONTACT ME'});
 });
 
 module.exports = router;

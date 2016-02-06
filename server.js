@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/// <reference path = "_reference.ts" />
 
 /**
  * Module dependencies.
