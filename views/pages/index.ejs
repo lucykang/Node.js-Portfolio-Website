@@ -8,31 +8,32 @@
 <html lang="en">
 
 <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>
         <%= title %>
     </title>
+    
+    <!-- favicon -->
+    <!--<link rel="icon" type="image/png" href="pics/favicon.png" />-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+    crossorigin="anonymous">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 
 <body class="full">
-    <header>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- favicon -->
-        <!--<link rel="icon" type="image/png" href="pics/favicon.png" />-->
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
-        crossorigin="anonymous">
-
-        <!-- custom CSS -->
-        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-
+    <header id="top" class="header">
+        <!-- hiding navbar on the first landing page
         <nav class="navbar navbar-transparent" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -45,9 +46,9 @@
                     </button>
 
                     <a class="navbar-brand navbar-brand-centered" href="/">
-                        <!-- logo -->
+                        <!-- logo 
                         <img src="images/logo.png" alt="HAE YEON KANG" width="300" />
-                        <!--HAE YEON KANG-->
+                        
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-brand-centered">
@@ -61,11 +62,13 @@
                 </div>
             </div>
         </nav>
-    </header>
-
-
-
-    <main class="main">
-
-    </main>
+        -->
+        <div class="text-vertical-center">
+            <img src="images/logo.png" alt="HAE YEON KANG" width="300" />
+            <h3>message</h3>
+            <br>
+            <a href="/about" class="btn btn-dark btn-lg">Let's find out!</a>
+        </div>
+        </header>
+        
     <% include ../partials/footer %>

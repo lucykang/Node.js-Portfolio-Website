@@ -1,5 +1,6 @@
 /*logo font: Bradley Hand ITC */
 
+/* CSS for global */
 html {
   position: relative;
   min-height: 100%;
@@ -7,8 +8,9 @@ html {
 
 body {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     font-family: 'nixie_oneregular', 'Courier New', Courier, monospace;
+    font-size: 12pt;
 }
 
 .full {
@@ -28,11 +30,12 @@ body {
 
 .navbar-brand-centered {
     position: absolute;
-    left: 40%;
+    left: 45%;
     display: block;
     width: 160px;
     text-align: center;
     background-color: transparent;
+    vertical-align: middle;
 }
 
 .navbar>.container .navbar-brand-centered, 
@@ -43,11 +46,12 @@ body {
 .navbar .navbar-nav {
     position: absolute;
     display: inline-block;
-    float: none;
-    left: 30%;
+    /*float: none;*/
+    left: 40%;
     margin-top: 80px;
+    margin-left: -80px;
     text-align: center;
-    vertical-align: top;
+    vertical-align: middle;
         
 }
     
@@ -70,16 +74,78 @@ body {
         /*rgb(255,245,75);*/
 }
 
+.row {
+    margin-bottom: 70px;
+}
+
 .main > .container {
     padding-top: 80px;
+}
+
+/* Index page */
+.text-vertical-center {
+    margin-top: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* portfolio page */
+.row > .portfolio-item > h4 {
+    margin-top: 50px;
+}
+
+.row > .text-center {
+    margin-bottom: 30px;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 100px;
+  padding-top: 20px;
   background-color: transparent;
+  font-size: 10pt;
 }
 
 .footer > .container {
