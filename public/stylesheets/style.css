@@ -13,6 +13,14 @@ body {
     font-size: 12pt;
 }
 
+h1{
+    font-size: 22pt;
+}
+
+h2{
+    font-size: 20pt;
+}
+
 .full {
     background: url("../images/business-869379.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -20,6 +28,10 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+.panel {
+			background-color: rgba(255, 255, 255, 0.7);
+}
+        
 .navbar-toggle .icon-bar {
     display: block;
     width: 22px;
@@ -79,12 +91,14 @@ body {
 }
 
 .main > .container {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
+
 /* Index page */
-.text-vertical-center {
-    margin-top: 200px;
+.panel .text-vertical-center {
+    /*margin-top: 200px;*/
+    margin: 150px 0;
     text-align: center;
     vertical-align: middle;
 }
@@ -95,7 +109,7 @@ body {
     
 }
 
-/* Custom Button Styles */
+/* Custom Button Styles on Index Page */
 
 .btn-dark {
     border-radius: 0;
@@ -124,12 +138,11 @@ body {
 }
 
 /* Custom Horizontal Rule */
-
 hr.small {
     max-width: 100px;
 }
 
-/* portfolio page */
+/* Portfolio page */
 .row > .portfolio-item > h4 {
     margin-top: 50px;
 }
@@ -137,6 +150,12 @@ hr.small {
 .row > .text-center {
     margin-bottom: 30px;
 }
+
+/* Services page */
+img.serviceimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
 .footer {
   position: absolute;
@@ -153,18 +172,8 @@ hr.small {
   padding-left: 15px;
 }
 
-/*
-.jumbotron {
-    position: relative;
-    background: #000 url("../images/hand-1076597.jpg") center center;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    overflow: hidden;
-}
-*/
+/* Responsive CSS rules for various devices
 
-/*
 @media screen and (max-width: 767px) {
 
     .navbar .navbar-nav {
