@@ -1,3 +1,11 @@
+/*
+File name: app.js
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+URL: haeyeonkang.azurewebsites.net
+file description: it is a bridging file that connects routes with server.
+*/
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');

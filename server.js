@@ -1,3 +1,11 @@
+/*
+File name: server.js
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+URL: haeyeonkang.azurewebsites.net
+file description: This file will be used to connect to the server
+*/
+
 #!/usr/bin/env node
 /// <reference path = "_reference.ts" />
 

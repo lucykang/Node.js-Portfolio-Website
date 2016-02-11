@@ -1,8 +1,9 @@
 /*
 File name: index.js
-     Author's name: Hae Yeon Kang (Lucy)
-     web site name: Hae Yeon's Portfolio Website
-     file description: This file will help visiters to navigate within the website.
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+URL: haeyeonkang.azurewebsites.net
+file description: This file will help visiters to navigate within the website.
 */
 
 var express = require('express');
