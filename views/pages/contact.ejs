@@ -16,29 +16,30 @@
     <main class="main">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 panel panel-default" >
+                <div class="col-md-8 col-md-offset-2 panel panel-default">
                     <div class="text-vertical-center" style="margin: 50px 0;">
                         <h1>Contact Me<h1>
                         <h4><em>Please fill out this contact form to send me an email.</em></h4>
                         <p><br/></p>
-                        <form>
+                        <form action="/contact" method="post">
                             <div class="form-group input-group input-group-md">
                                 <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user"></i></span>
-                                <input type="text" class="form-control" id="inputName" placeholder="Full Name" required="requried">
+                                <input type="text" class="form-control" id="inputName" name="name" placeholder="Full Name" required="requried">
                             </div>
                             <div class="form-group input-group input-group-md">
                                 <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-building"></i></span>
-                                <input type="text" class="form-control" id="inputCompany" placeholder="Company Name">
+                                <input type="text" class="form-control" id="inputCompany" name="company" placeholder="Company Name">
                             </div>
                             <div class="form-group input-group input-group-md">
                                 <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-envelope"></i></span>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required="required">
+                                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required="required">
                             </div>
                             <div class="form-group">
                                 <label for="inputMessage">Message</label>
-                                <textarea class="form-control" id="inputMessage" rows="8" placeholder="Please write message with preferred contact method and information."></textarea>
+                                <textarea class="form-control" id="inputMessage" name="message" rows="8" placeholder="Please write message with preferred contact method and information."></textarea>
                             </div>
                             <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane"></i> Send</button>
+                            
                         </form>
                     </div>
                 </div>

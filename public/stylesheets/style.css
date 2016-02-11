@@ -79,7 +79,8 @@ h2{
     color: grey;
 }
 
-.navbar-transparent .navbar-nav > li > a:hover {
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active {
         color: rgb(500,0,70);
         background-color: transparent;
         font-weight: bold;
