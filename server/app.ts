@@ -1,14 +1,8 @@
-/*
-File name: app.js
-Author's name: Hae Yeon Kang (Lucy)
-web site name: Hae Yeon's Portfolio Website
-URL: haeyeonkang.azurewebsites.net
-file description: it is a bridging file that connects routes with server.
-*/
+/// <reference path = "./_reference.ts"/>
 
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
+//var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -30,14 +24,21 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', routes);
 app.use('/users', users);
 
+class CustomError extends Error{
+    public status:number;
+    constructor(message?:string){
+        super(message);
+    }
+}
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new CustomError('Not Found');
   err.status = 404;
   next(err);
 });

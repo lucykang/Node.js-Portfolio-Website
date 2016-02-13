@@ -88,7 +88,7 @@ h2{
 }
 
 .navbar-transparent .navbar-nav > li > a:hover,
-.navbar-transparent .navbar-nav > li > a:active {
+.navbar-transparent .navbar-nav > li > a:active{
         color: rgb(500,0,70);
         background-color: transparent;
         font-weight: bold;

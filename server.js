@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-/// <reference path = "_reference.ts" />
 
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/app');
 var debug = require('debug')('portfolio-website-p1:server');
 var http = require('http');
 
